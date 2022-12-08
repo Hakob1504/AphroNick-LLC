@@ -159,6 +159,10 @@ a {
     color: rgb(127, 91, 65);
 }
 
+.editor-job {
+    font-size: 15px;
+}
+
 /* /blog */
 
 /* Footer */
@@ -202,3 +206,6 @@ footer a{
 }
 
 /* Animations */
+
+/* media screen */
+
