@@ -1,0 +1,204 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+h2{
+    color: rgb(127, 91, 65);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+/* floating btn */
+
+#floating-btn {
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    position: fixed;
+    display: none;
+}
+
+/* floating btn */
+
+/* header */
+.header_link {
+    border-radius: 0;
+    background-color: rgb(243, 227, 202);
+    color: rgb(127, 91, 65);
+}
+
+a {
+    color: rgb(127, 91, 65);
+}
+
+.search_input {
+    border-radius: 20px 0 0 20px;
+    border-right: none;
+    border: none;
+}
+
+.search_input:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.search_input::placeholder {
+    color: rgb(127, 91, 65);
+}
+
+.search_btn {
+    border-radius: 0 20px 20px 0;
+    border-left: none;
+    background-color: rgb(127, 91, 65);
+}
+
+.modal-opener {
+    padding: 0;
+}
+
+.cart-opener {
+    padding: 0;
+}
+
+/* /header */
+
+/* modal */
+.modal {
+    color: rgb(127, 91, 65);
+}
+
+.modal input {
+    border-color: rgb(243, 227, 202);
+}
+
+.modal input::placeholder {
+    color: rgb(127, 91, 65);
+}
+
+#remember {
+    box-shadow: none;
+}
+
+#remember:checked {
+    box-shadow: none;
+}
+
+#remember:focus {
+    border-color: rgb(211, 217, 222);
+}
+
+.login_btn {
+    background-color: rgb(243, 227, 202);
+    color: rgb(127, 91, 65);
+}
+
+.register_opener {
+    background-color: rgb(243, 227, 202);
+    color: rgb(127, 91, 65);
+}
+
+/* /modal */
+
+/* cart */
+
+.delivery-btn-in-cart{
+    border-color: rgb(127, 91, 65);
+    color: rgb(127, 91, 65);
+}
+.delivery-btn-in-cart:hover{
+    background-color: rgb(127, 91, 65);
+    color: white;
+}
+
+/* /cart */
+
+/* Our story */
+.our-story-item-right{
+    background-color: rgb(211, 217, 222);
+}
+.our-story-item-left{
+    background-color: rgb(243, 227, 202);
+}
+.fs-4{
+    color: rgb(127, 91, 65);
+}
+
+/* /our story */
+
+/* Delivery */
+
+.order-now{
+    color: rgb(127, 91, 65);
+    border-color: rgb(127, 91, 65);
+}
+.order-now:hover{
+    background-color: rgb(127, 91, 65);
+    color: white;
+}
+.confirm-order{
+    color: rgb(127, 91, 65);
+    border-color: rgb(127, 91, 65);
+}
+.confirm-order:hover{
+    color: white;
+    background-color:rgb(127, 91, 65);
+}
+.plus-btn, .minus-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* /delivery */
+
+/* Blog */
+
+.blog-text{
+    color: rgb(127, 91, 65);
+}
+
+/* /blog */
+
+/* Footer */
+
+h4{
+    color: rgb(127, 91, 65);
+}
+footer a{
+    text-decoration: none;
+}
+.footer-contact{
+    background-color: rgb(243, 227, 202);
+}
+
+/* /footer */
+
+/* Animations */
+.slide-in-from-right {
+    animation: 1s cubic-bezier(0,1.08,1,.99) 0s 1 slideInFromRight forwards;
+}
+.slide-in-from-left {
+    animation: 1s cubic-bezier(0,1.08,1,.99) 0s 1 slideInFromLeft forwards;
+}
+
+@keyframes slideInFromLeft {
+    from{
+        transform:translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInFromRight {
+    from{
+        transform:translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+/* Animations */

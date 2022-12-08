@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aphronick LLC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/AphroNick_Logo.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- scroll top -->
+    <button id="floating-btn" class="btn btn-floating">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(127,91,65)" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+            <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+          </svg>
+    </button>
+
+    <!-- scroll top -->
+
+    <header>
+        <a href="" class="header_link btn w-100">APHRO SALE: 30% off all orders. Free shipping for US orders $75+ </a>
+        <nav class="navbar navbar-expand-lg navbar-light p-3" style="background-color: rgb(235, 233, 233);">
+            <div class="container">
+                <a href="" style="color: rgb(127,91,65);" class="navbar-brand me-4">AphroNick LLC</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#supportedNavbarContent" aria-expanded="false"
+                    aria-controls="supportedNavbarContent" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="supportedNavbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 list-unstyled">
+                        <li class="nav-item"><a href="#carouselControls"
+                                class="navbar-link me-4 text-decoration-none">Home</a></li>
+                        <li class="nav-item"><a href="#our-story" class="navbar-link me-4 text-decoration-none">Our
+                                story</a></li>
+                        <li class="nav-item"><a href="#deliveryLabel"
+                                class="navbar-link me-4 text-decoration-none">Delivery</a></li>
+                        <li class="nav-item"><a href="#blogLabel" class="navbar-link me-4 text-decoration-none">Blog</a>
+                        </li>
+                    </ul>
+                    <form action="" class="d-flex me-4 col-5">
+                        <input type="search" class="form-control search_input w-lg-50" id="" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn search_btn" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </form>
+                    <button class="btn modal-opener me-4 mt-lg-0 mt-sm-2" type="button" data-bs-toggle="modal"
+                        data-bs-target="#showModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(127,91,65)"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
+                    </button>
+                    <button class="btn cart-opener me-4 mt-lg-0 mt-sm-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(127,91,65)"
+                            class="bi bi-bag-check" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="showModal" tabindex="-1" aria-hidden="true" aria-labelledby="showModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="showModalLabel">Login</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="email" name="" id="" class="form-control mb-3" placeholder="Email">
+                    <input type="password" name="" id="" class="form-control mb-3" placeholder="Password">
+                    <div class="form-check">
+                        <input type="checkbox" name="remember" id="remember" class="form-check-input">
+                        <label for="remember">Remember</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn login_btn form-control">Login</button>
+                    <a class="me-auto" href="#">forgot password or login?</a>
+                    <button class="btn register_opener">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+
+    <!-- Cart -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Cart</h5>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Your cart is empty.</p>
+            <p>&darr; Tap here to fill</p>
+            <a href="#" class="btn delivery-btn-in-cart">Delivery</a>
+        </div>
+    </div>
+
+    <!-- Cart -->
+
+    <!-- Slide -->
+
+    <main>
+        <div id="carouselControls" class="carousel carousel-fade slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner m-auto">
+                <div class="carousel-item">
+                    <img src="./img/slide1.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item active">
+                    <img src="./img/slide2.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slide3.jpg" class="d-block w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                <span style="background-color: rgb(127,91,65);" class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                <span style="background-color: rgb(127,91,65);" class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <!-- /slide -->
+
+        <!-- Our story -->
+
+        <div id="our-story" class="container mb-5">
+            <h2 class="text-center mb-5">Our Story</h2>
+            <div class="row info d-f our-story-item-left d-flex justify-content-center mb-5 py-2 py-sm-5 img-thumbnail">
+                <div class="col-lg-2 col-sm-10">
+                    <img src="./img/info1.jpg" alt="" class="w-100 mb-lg-0 mb-sm-3">
+                </div>
+                <div class="col-lg-10 col-sm-10">
+                    <p class="fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque vero, ut quas
+                        dolorem, sint neque optio ea ab eos nihil sequi debitis amet et quidem. Nam vel, inventore ipsam
+                        tempore repudiandae vero ut quidem?</p>
+                </div>
+            </div>
+            <div
+                class="row info-rev our-story-item-right d-flex justify-content-center mb-5 py-2 py-sm-5 img-thumbnail">
+                <div class="col-lg-2 col-sm-10">
+                    <img src="./img/info2.jpg" alt="" class="w-100 mb-lg-0 mb-sm-3">
+                </div>
+                <div class="col-lg-10 col-sm-10">
+                    <p class="fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque vero, ut quas
+                        dolorem, sint neque optio ea ab eos nihil sequi debitis amet et quidem. Nam vel, inventore ipsam
+                        tempore repudiandae vero ut quidem?</p>
+                </div>
+            </div>
+            <div class="row info d-f our-story-item-left d-flex justify-content-center mb-5 py-2 py-sm-5 img-thumbnail">
+                <div class="col-lg-2 col-sm-10">
+                    <img src="./img/info3.jpg" alt="" class="w-100 mb-lg-0 mb-sm-3">
+                </div>
+                <div class="col-lg-10 col-sm-10">
+                    <p class="fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque vero, ut quas
+                        dolorem, sint neque optio ea ab eos nihil sequi debitis amet et quidem. Nam vel, inventore ipsam
+                        tempore repudiandae vero ut quidem?</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- /Our story -->
+
+        <!-- Delivery -->
+
+        <div class="container mb-5">
+            <h2 id="deliveryLabel" class="text-center mb-5">Delivery</h2>
+            <div class="row d-flex justify-content-center">
+                <div class="col">
+                    <div id="delivery-body" class="row d-flex justify-content-center align-items-center">
+                        <div class="col-4">
+                            <img src="./img/delivery.png" alt="" class="w-100 info-rev">
+                        </div>
+                        <div class="col-4 delivery-hidden-part info-rev d-none mt-5">
+                            <div class="row d-flex justify-content-center mb-3">
+                                <div class="col-3">
+                                    <button class="btn minus-btn w-100">-</button>
+                                </div>
+                                <div class="col-4">
+                                    <input class="order-count w-100 text-center" type="number">
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn plus-btn w-100">+</button>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col d-flex align-items-baseline justify-content-center">
+                                    <input type="number" class="price-field text-center border-0 w-25" readonly>
+                                    <p>$</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <button class="btn order-now info-rev">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col order-form info-rev d-none">
+                    <form action="" class="d-flex flex-column gap-3">
+                        <input type="text" class="form-control" placeholder="Name">
+                        <input type="text" class="form-control" placeholder="Surname">
+                        <input type="text" class="form-control" placeholder="Address">
+                        <input type="number" class="form-control" placeholder="Post Code">
+                        <select class="form-select">
+                            <option value="0">Choose Payment</option>
+                            <option value="1">Visa</option>
+                            <option value="2">Mastercard</option>
+                            <option value="3">Paypal</option>
+                            <option value="4">Discover</option>
+                        </select>
+                        <input type="number" class="form-control" placeholder="Card Number">
+                        <button class="btn confirm-order form-control">Confirm Order</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- /delivery -->
+
+        <!-- Blog -->
+
+        <div class="container mb-5" id="blogLabel">
+            <h2 class="text-center mb-5">Blog</h2>
+            <div class="row info mb-5 d-flex flex-md-row flex-sm-column-reverse">
+                <div class="col-md-4 col-sm-12 my-auto">
+                    <h3 class="lh-base blog-text">Register now and get code with 10% off. Welcome the new year with
+                        beautiful skin․</h3>
+                    <p class="text-muted">updated 4 days ago by <a href="#">Elizabeth Nalbandyan</a></p>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <img src="./img/blog1.jpg" alt="" class="w-100">
+                </div>
+            </div>
+            <h2 class="text-center mb-5">Our editors</h2>
+            <div class="row info-rev d-flex gap-5 justify-content-center">
+                <div class="col-2">
+                    <img src="./img/Elizabeth.jpg" alt="" class="w-100 mb-2 rounded-circle">
+                    <h5 class="text-center">Elizabeth</h5>
+                    <h5 class="text-center">Nalbandyan</h5>
+                    <p class="text-center text-muted">Producer and Exporter</p>
+                </div>
+                <div class="col-2">
+                    <img src="./img/Hakob.jpg" alt="" class="w-100 mb-2 rounded-circle">
+                    <h5 class="text-center">Hakob</h5>
+                    <h5 class="text-center">Ayvazyan</h5>
+                    <p class="text-center text-muted">Producer and IT Manager</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- /blog -->
+
+    </main>
+
+    <!-- delivery page -->
+
+    <footer class="pt-5 footer-contact">
+        <div class="container">
+            <div class="row my-5">
+                <h4 class="text-center mb-3">Contact us</h4>
+                <ul class="list-unstyled d-flex justify-content-center gap-3">
+                    <li>
+                        <a href="https://www.instagram.com/aphronick_/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(254,1,128)"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/AphroNickSkinCare" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(53,91,168)"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+37477599220">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill=""
+                                class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row d-flex justify-content-lg-center mb-5">
+                <div class="col-4 border-dark border-top d-flex flex-column align-items-center">
+                    <h5 class="my-4">Help & Information</h5>
+                    <ul class="list-unstyled d-flex flex-column">
+                        <li>
+                            <a href="#" class="btn d-flex align-items-baseline gap-2" role="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill=""
+                                    class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg>
+                                Customer Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn d-flex align-items-baseline gap-2" role="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-truck" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>
+                                Delivery Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn d-flex align-items-baseline gap-2" role="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-question-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                                </svg>
+                                Help Center
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-4 border-dark border-top d-flex flex-column align-items-center">
+                    <h5 class="my-4">Legal</h5>
+                    <ul class="list-unstyled d-flex flex-column">
+                        <li><a class="btn d-flex align-items-baseline gap-2" role="button" href="#">Cookie
+                                Information</a></li>
+                        <li><a class="btn d-flex align-items-baseline gap-2" role="button" href="#">Privacy Policy</a>
+                        </li>
+                        <li><a class="btn d-flex align-items-baseline gap-2" role="button" href="#">Terms &
+                                Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 border-dark border-top d-flex flex-column align-items-center">
+                    <h5 class="my-4">How To Contact Us</h5>
+                    <ul class="list-unstyled d-flex flex-column">
+                        <li><a class="btn d-flex align-items-baseline gap-2" role="button" href="#">Message Us</a></li>
+                        <li><a class="btn d-flex align-items-baseline gap-2" role="button" href="#">Join AphroNick
+                                Experts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid border-top border-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col my-5">
+                        <p>2023 © The Cdv.com Ltd.</p>
+                    </div>
+                    <div class="col my-5">
+                        <h5>Pay securely with</h5>
+                        <div class="row">
+                            <div class="col-7">
+                                <ul class="list-unstyled d-flex gap-3">
+                                    <li><img src="./img/visa.png" alt="" class="w-100"></li>
+                                    <li><img src="./img/mastercard.png" alt="" class="w-100"></li>
+                                    <li><img src="./img/paypal.png" alt="" class="w-100"></li>
+                                    <li><img src="./img/discover.png" alt="" class="w-100"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
