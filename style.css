@@ -173,6 +173,9 @@ h4{
 footer a{
     text-decoration: none;
 }
+.footer-links a{
+    font-size: 12px;
+}
 .footer-contact{
     background-color: rgb(243, 227, 202);
 }
